@@ -1,4 +1,5 @@
 # RubyLeetSpeak
+<<<<<<< HEAD
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/RubyLeetSpeak`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -39,3 +40,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+=======
+Ruby leet ( 1337 ) speak. Leet (or "1337"), also known as eleet or leetspeak, is an alternative alphabet for the English language that is used primarily on the Internet. It uses various combinations of ASCII characters to replace Latinate letters. For example, leet spellings of the word leet include 1337 and l33t; eleet may be spelled 31337 or 3l33t.
+>>>>>>> 33a99fba8347caeb25e1f8547b439d38cfae241d
