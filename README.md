@@ -39,9 +39,9 @@ end<br/>
 
 <h2>Method implementation</h2>
 	
-	class String<br/>
+	class String
 			
-		def LeetIt<br/>
+		def LeetIt
 			result= ""
 
 			leet = Hash.new  
