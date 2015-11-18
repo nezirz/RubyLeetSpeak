@@ -23,7 +23,63 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<h1>Ruby Leet Speak</h1>
+<br/>
+Regular: <%= @cool %><br/>
+<br/>
+Converted: <%= @leet %><br/>
+<h2>Usage</h2>
+class HomeController < ApplicationController<br/>
+  def index<br/>
+  	@cool= "Some simple text"<br/>
+  	@leet= "Some simple text".LeetIt<br/>
+  end<br/>
+end<br/>
+<br/>
+
+<h2>Method implementation</h2>
+	
+	class String<br/><br/>
+			
+		def LeetIt<br/>
+			result= ""<br/><br/>
+
+			leet = Hash.new  <br/>
+			leet["a"] = '4'  <br/>
+			leet["b"] = '8'  <br/>
+			leet["c"] = '¢'  <br/>
+			leet["d"] = '|)'  <br/>
+			leet["e"] = '3'  <br/>
+			leet["f"] = '<'  <br/>
+			leet["g"] = '9'  <br/>
+			leet["h"] = '#'  <br/>
+			leet["i"] = '1'  <br/>
+			leet["j"] = '_/'  <br/>
+			leet["k"] = '|<'  <br/>
+			leet["l"] = '|_'  <br/>
+			leet["m"] = '^^'  <br/>
+			leet["n"] = '^'  <br/>
+			leet["o"] = '0'  <br/>
+			leet["p"] = '|>'  <br/>
+			leet["q"] = '<|'  <br/>
+			leet["r"] = '®'  <br/>
+			leet["s"] = '5'  <br/>
+			leet["t"] = '7'  <br/>
+			leet["u"] = 'û'<br/>
+			leet["v"] = '\/'<br/>
+			leet["w"] = '><'<br/>
+			leet["x"] = '><'<br/>
+			leet["y"] = '¥'<br/>
+			leet["z"] = '2'<br/>
+			leet[" "] = ' '<br/>
+			<br/>
+			self.each_char do |c|<br/>
+				result= result.to_s + (leet.has_key?(c) ? leet[c].to_s : c)<br/>
+			end<br/>
+<br/>
+			return result<br/>
+		end<br/>
+	end<br/>
 
 ## Development
 
