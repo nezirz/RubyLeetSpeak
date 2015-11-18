@@ -25,9 +25,9 @@ Or install it yourself as:
 
 <h1>Ruby Leet Speak</h1>
 <br/>
-Regular: <%= @cool %><br/>
-<br/>
-Converted: <%= @leet %><br/>
+Regular: Some simple text
+
+Converted: S0^^3 51^^|>|_3 73><7
 <h2>Usage</h2>
 class HomeController < ApplicationController<br/>
   def index<br/>
@@ -39,47 +39,46 @@ end<br/>
 
 <h2>Method implementation</h2>
 	
-	class String<br/><br/>
+	class String<br/>
 			
 		def LeetIt<br/>
-			result= ""<br/><br/>
+			result= ""
 
-			leet = Hash.new  <br/>
-			leet["a"] = '4'  <br/>
-			leet["b"] = '8'  <br/>
-			leet["c"] = '¢'  <br/>
-			leet["d"] = '|)'  <br/>
-			leet["e"] = '3'  <br/>
-			leet["f"] = '<'  <br/>
-			leet["g"] = '9'  <br/>
-			leet["h"] = '#'  <br/>
-			leet["i"] = '1'  <br/>
-			leet["j"] = '_/'  <br/>
-			leet["k"] = '|<'  <br/>
-			leet["l"] = '|_'  <br/>
-			leet["m"] = '^^'  <br/>
-			leet["n"] = '^'  <br/>
-			leet["o"] = '0'  <br/>
-			leet["p"] = '|>'  <br/>
-			leet["q"] = '<|'  <br/>
-			leet["r"] = '®'  <br/>
-			leet["s"] = '5'  <br/>
-			leet["t"] = '7'  <br/>
-			leet["u"] = 'û'<br/>
-			leet["v"] = '\/'<br/>
-			leet["w"] = '><'<br/>
-			leet["x"] = '><'<br/>
-			leet["y"] = '¥'<br/>
-			leet["z"] = '2'<br/>
-			leet[" "] = ' '<br/>
+			leet = Hash.new  
+			leet["a"] = '4'  
+			leet["b"] = '8'  
+			leet["c"] = '¢' 
+			leet["d"] = '|)' 
+			leet["e"] = '3'  
+			leet["f"] = '<'  
+			leet["g"] = '9'  
+			leet["h"] = '#' 
+			leet["i"] = '1'  
+			leet["j"] = '_/'  
+			leet["k"] = '|<' 
+			leet["l"] = '|_'  
+			leet["m"] = '^^'  
+			leet["n"] = '^'  
+			leet["o"] = '0'  
+			leet["p"] = '|>'  
+			leet["q"] = '<|'  
+			leet["r"] = '®'  
+			leet["s"] = '5'  
+			leet["t"] = '7'  
+			leet["u"] = 'û'
+			leet["v"] = '\/'
+			leet["w"] = '><'
+			leet["x"] = '><'
+			leet["y"] = '¥'
+			leet["z"] = '2'
+			leet[" "] = ' '
 			<br/>
-			self.each_char do |c|<br/>
-				result= result.to_s + (leet.has_key?(c) ? leet[c].to_s : c)<br/>
-			end<br/>
-<br/>
-			return result<br/>
-		end<br/>
-	end<br/>
+			self.each_char do |c|
+				result= result.to_s + (leet.has_key?(c) ? leet[c].to_s : c)
+			end
+			return result
+		end
+	end
 
 ## Development
 
