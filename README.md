@@ -27,11 +27,11 @@ Or install it yourself as:
 
 <h1>Ruby Leet Speak</h1>
 <br/>
-<b>Regular:</b>b> Some simple text
+<b>Regular:</b> Some simple text
 
 <b>Converted:</b> S0^^3 51^^|>|_3 73><7
 <h2>Usage</h2>
-Calling <b>.LeetIt</b>b> string method on any string
+Calling <b>.LeetIt</b> string method on any string
 "Some simple text".<b>LeetIt</b>
 
 class HomeController < ApplicationController<br/>
