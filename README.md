@@ -11,6 +11,8 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'RubyLeetSpeak'
+or
+gem 'RubyLeetSpeak', '~> 0.3.0'
 ```
 
 And then execute:
@@ -32,7 +34,7 @@ Converted: S0^^3 51^^|>|_3 73><7
 class HomeController < ApplicationController<br/>
   def index<br/>
   	@cool= "Some simple text"<br/>
-  	@leet= "Some simple text".LeetIt<br/>
+  	@leet= "Some simple text".<b>LeetIt</b><br/>
   end<br/>
 end<br/>
 <br/>
@@ -72,7 +74,7 @@ end<br/>
 			leet["y"] = '¥'
 			leet["z"] = '2'
 			leet[" "] = ' '
-			<br/>
+
 			self.each_char do |c|
 				result= result.to_s + (leet.has_key?(c) ? leet[c].to_s : c)
 			end

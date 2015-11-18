@@ -6,7 +6,7 @@ require 'RubyLeetSpeak/version'
 Gem::Specification.new do |spec|
   spec.name          = "RubyLeetSpeak"
   spec.version       = RubyLeetSpeak::VERSION
-  spec.authors       = ["zirexba"]
+  spec.authors       = ["zire"]
   spec.email         = ["zirexba@hotmail.com"]
 
   spec.summary       = %q{This is little Ruby Gem for Leet Speak.}
